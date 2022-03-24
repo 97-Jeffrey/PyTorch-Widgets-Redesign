@@ -1,10 +1,15 @@
-import React, { Fragment }from 'react';
+import React, {useState, Fragment }from 'react';
 import './widgetSection.css'
 
 
 const WidgetSection = ({data}) =>{
   
   const {groupName, selection} = data;
+  const [selectedwidget, setSelectedWidget]  = useState("");
+
+  const clickWidget = index =>{
+    setSelectedWidget(index)
+  }
   
   return (
     <Fragment>
@@ -17,7 +22,9 @@ const WidgetSection = ({data}) =>{
             return (
               <div 
                 key={index}
-                className="widget">{each} 
+                onClick={()=>clickWidget(index)}
+                className={ selectedwidget== index? "widget active":"widget"}>{each} 
+                
               </div>)
           })}
         </div>

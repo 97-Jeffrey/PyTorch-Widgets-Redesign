@@ -10,6 +10,11 @@
   padding: 10px 10px;
 }
 
+.active{
+  background-color: #f40;
+  color: #fff;
+}
+
 .widget:hover {
   background-color: #f40;
   color: #fff;
