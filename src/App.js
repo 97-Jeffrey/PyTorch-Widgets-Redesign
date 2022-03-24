@@ -20,7 +20,6 @@ function App() {
     "Compute Platform":"CUDA 10.2"
   })
 
-
   return (
     <div className="App">
       <div className="widgets-section">
@@ -36,7 +35,7 @@ function App() {
       </div>
       <div className='command-section'>
         <CommandSection 
-            selectedWidgetsData={selectedWidgetsData}
+          selectedWidgetsData={selectedWidgetsData}
         />
       </div>
     </div>

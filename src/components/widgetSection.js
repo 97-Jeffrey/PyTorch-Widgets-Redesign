@@ -1,5 +1,10 @@
-import React, {useState, Fragment }from 'react';
+import React, { useState, Fragment } from 'react';
+
+// import css file
 import './widgetSection.css'
+
+// import components:
+import Widget from './widget';
 
 
 const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
@@ -21,18 +26,20 @@ const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
   return (
     <Fragment>
       <div className="section ">
-        <div>
+        <div className="section-groupName">
           {groupName}
         </div>
         <div className="widgets">
-          {selections.map((each, index)=>{
+          {selections.map((selection, index)=>{
             return (
-              <div 
+              <Widget 
                 key={index}
+                index ={index}
+                selection={selection}
                 onClick={()=>clickWidget(index)}
-                className={ selectedwidget=== index? "widget active":"widget"}>{each} 
-                
-              </div>)
+                selectedwidget={selectedwidget}
+              />
+              )
           })}
         </div>
       </div>
