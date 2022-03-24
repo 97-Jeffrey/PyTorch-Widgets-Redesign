@@ -13,11 +13,11 @@ import './App.css';
 function App() {
   
   const [selectedWidgetsData, setSelectedWidgetsData] = useState({
-    "PyTorch Build":"",
-    "Your OS":"",
-    "Package":"",
-    "Language":"",
-    "Compute Platform":""
+    "PyTorch Build":"Stable(1.11.0)",
+    "Your OS":"Linux",
+    "Package":"Conda",
+    "Language":"Python",
+    "Compute Platform":"CUDA 10.2"
   })
 
 

@@ -5,13 +5,15 @@ import './widgetSection.css'
 const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
 }) =>{
   
-  const {groupName, selection} = data;
-  const [selectedwidget, setSelectedWidget]  = useState("");
+  const {groupName, selections} = data;
+  const [selectedwidget, setSelectedWidget]  = useState(0);
 
+
+  // widget will update Background when clicked
   const clickWidget = index =>{
     setSelectedWidget(index)
     setSelectedWidgetsData(
-      {...selectedWidgetsData, [groupName]: selection[index]}
+      {...selectedWidgetsData, [groupName]: selections[index]}
     )
     
   }
@@ -23,7 +25,7 @@ const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
           {groupName}
         </div>
         <div className="widgets">
-          {selection.map((each, index)=>{
+          {selections.map((each, index)=>{
             return (
               <div 
                 key={index}

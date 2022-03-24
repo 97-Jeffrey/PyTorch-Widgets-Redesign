@@ -3,7 +3,6 @@ import "./commandSection.css";
 
 const CommandSection = ({ selectedWidgetsData}) =>{
 
-  console.log(selectedWidgetsData)
   const {
     "PyTorch Build": pytorch, 
     "Your OS":os, 
@@ -11,7 +10,7 @@ const CommandSection = ({ selectedWidgetsData}) =>{
     "Language":language,
     "Compute Platform":platform
 
-  } = selectedWidgetsData
+  } = selectedWidgetsData;
   return (
     <Fragment>
       <div className='command-text'>
