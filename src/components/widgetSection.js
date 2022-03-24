@@ -2,13 +2,18 @@ import React, {useState, Fragment }from 'react';
 import './widgetSection.css'
 
 
-const WidgetSection = ({data}) =>{
+const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
+}) =>{
   
   const {groupName, selection} = data;
   const [selectedwidget, setSelectedWidget]  = useState("");
 
   const clickWidget = index =>{
     setSelectedWidget(index)
+    setSelectedWidgetsData(
+      {...selectedWidgetsData, [groupName]: selection[index]}
+    )
+    
   }
   
   return (
@@ -23,7 +28,7 @@ const WidgetSection = ({data}) =>{
               <div 
                 key={index}
                 onClick={()=>clickWidget(index)}
-                className={ selectedwidget== index? "widget active":"widget"}>{each} 
+                className={ selectedwidget=== index? "widget active":"widget"}>{each} 
                 
               </div>)
           })}
