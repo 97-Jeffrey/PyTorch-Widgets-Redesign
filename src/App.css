@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header {
+.widgets-section {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,10 @@
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 1vmin);
+}
+
+.command-section {
+  margin-top: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
