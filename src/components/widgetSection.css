@@ -1,0 +1,19 @@
+.section {
+  /* border: 1px solid red; */
+}
+.widgets {
+  display: flex;
+  margin-top: 20px;
+}
+
+.widget {
+  margin: 10px;
+  border: 2px solid rgb(230, 226, 226);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.widget:hover {
+  background-color: #f40;
+  color: #fff;
+}
