@@ -25,7 +25,7 @@ const WidgetSection = ({ data, selectedWidgetsData, setSelectedWidgetsData
   
   return (
     <Fragment>
-      <div className="section ">
+      <div className="section">
         <div className="section-groupName">
           {groupName}
         </div>

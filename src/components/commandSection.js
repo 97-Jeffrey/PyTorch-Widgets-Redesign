@@ -17,7 +17,7 @@ const CommandSection = ({ selectedWidgetsData }) =>{
         Run this Command:
       </div>
       <div className="command">
-         cmd: {pytorch} {os} {Package} {language} {platform}
+         <div>cmd: {pytorch} {os} {Package} {language} {platform}</div>
       </div>
     </Fragment>
   )

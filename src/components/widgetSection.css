@@ -1,5 +1,12 @@
+/* .section {
+  border: 1px solid red;
+  flex: 0 0 20%;
+  margin-bottom: "10px";
+} */
+
 .widgets {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
