@@ -1,7 +1,7 @@
 import React, { Fragment }from 'react';
 import "./commandSection.css";
 
-const CommandSection = ({ selectedWidgetsData}) =>{
+const CommandSection = ({ selectedWidgetsData }) =>{
 
   const {
     "PyTorch Build": pytorch, 
@@ -9,15 +9,15 @@ const CommandSection = ({ selectedWidgetsData}) =>{
     Package,
     "Language":language,
     "Compute Platform":platform
-
   } = selectedWidgetsData;
+  
   return (
     <Fragment>
       <div className='command-text'>
         Run this Command:
       </div>
       <div className="command">
-         cmd:{pytorch} {os} {Package} {language} {platform}
+         <div>cmd: {pytorch} {os} {Package} {language} {platform}</div>
       </div>
     </Fragment>
   )
