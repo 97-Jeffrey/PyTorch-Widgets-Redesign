@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![the old widget](https://github.com/97-Jeffrey/PyTorch-Widgets-Redesign/blob/master/Doc/Screen%20Shot%202022-03-29%20at%202.29.57%20PM.png?raw=true)
 
-1. has name on first column, and each name has selections on the same row, so the overall structure is a table. which takes longer to figure out how to select widget, and it looks jammed visually.
+1. has name on first column, and each name has selections on the same row, so the overall structure is a table, and widgets are ajacent to each other not only horizontally, but vertically as well, which takes longer to figure out how to select widget, and it looks jammed visually.
 
 2. The overall design is older: each widget block is a rectangle and widgets are tightly packed to each other.
 
