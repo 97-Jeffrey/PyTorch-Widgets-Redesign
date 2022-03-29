@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import WidgetSection from './components/widgetSection';
 import CommandSection from './components/commandSection';
 
-// Data import:
+//Import Data:
 import widgetData from './widgetData';
 
 //Import CSS
