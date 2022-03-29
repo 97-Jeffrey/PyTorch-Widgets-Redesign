@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
-//import css file
+//import css 
 import "./widget.css"
 
-const Widget = ({index, onClick, selectedwidget, selection}) =>{
+const Widget = ({ index, onClick, selectedwidget, selection }) =>{
 
   return(
     <Fragment>

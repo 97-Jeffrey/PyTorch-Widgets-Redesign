@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 
-// import css file
+// import css
 import './widgetSection.css'
 
 // import components:

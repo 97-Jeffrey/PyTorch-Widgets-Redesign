@@ -1,4 +1,6 @@
 import React, { Fragment }from 'react';
+
+// import CSS :
 import "./commandSection.css";
 
 const CommandSection = ({ selectedWidgetsData }) =>{
