@@ -5,7 +5,7 @@ import WidgetSection from './components/widgetSection';
 import CommandSection from './components/commandSection';
 
 //Import Data:
-import widgetData from './widgetData';
+import widgetData from './data/widgetData';
 
 //Import CSS
 import './App.css';

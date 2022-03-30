@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 //import css 
-import "./widget.css"
+import "../styling/widget.css"
 
 const Widget = ({ index, onClick, selectedwidget, selection }) =>{
 

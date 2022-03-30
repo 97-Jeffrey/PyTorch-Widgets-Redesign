@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 
 // import css
-import './widgetSection.css'
+import '../styling/widgetSection.css'
 
 // import components:
 import Widget from './widget';
